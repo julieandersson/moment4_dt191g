@@ -1,6 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using moment4_dt191g.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
+
+builder.Services.AddDbContext<SonglistDbContext>(options => 
+options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 

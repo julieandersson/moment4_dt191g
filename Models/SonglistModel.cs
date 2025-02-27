@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations; // dataannotations för required oc
 
 namespace moment4_dt191g.Models;
 
-public class Song {
+public class SonglistModel {
     // Properties
     public int Id { get; set; } // primärnyckel
 
