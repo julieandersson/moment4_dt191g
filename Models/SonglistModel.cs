@@ -14,8 +14,6 @@ public class SonglistModel {
     [Required(ErrorMessage = "Du måste ange låttitel.")]
     public string? Title { get; set; }
 
-    // låtens längd
-    [Required(ErrorMessage = "Du måste ange längd på låten.")]
     public int Length { get; set; }
 
     // låtens kategori/genre
