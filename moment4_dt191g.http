@@ -1,0 +1,6 @@
+@moment4_dt191g_HostAddress = http://localhost:5050
+
+GET {{moment4_dt191g_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
